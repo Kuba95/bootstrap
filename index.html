@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- kontener dla buttonow i dla miejsca na notatki-->
+    <div class="container">
+        <div id="createNote">
+            <button id="clickOn">stworz notatke</button>
+            <button id="clickReset">usun notatki</button>
+        </div>
+        <div id="notes"></div>
+    </div>
+   
+    <!-- okno modalne -->
+    <div id="modal">
+        <div class="modal-inner">
+            <form action="">
+                <input type="text" placeholder="wpisz tytul" id="noteTitle">
+                <textarea name="" placeholder="wpisz tresc" id="noteContent"></textarea>
+                <input type="text" placeholder="podaj kolor" id="noteColor">
+                <label for="important">Ważna notatka</label>
+                <input type="checkbox" id="important">
+                <button id="saveNote" onclick="save()">wyslij</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
